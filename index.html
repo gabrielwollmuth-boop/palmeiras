@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio PALMEIRENCE | Gabriel</title>
+    <title>Portfólio PALMEIRENSE | Gabriel</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -11,13 +11,22 @@
     <header>
         <div class="header-container">
             <div class="logo-placeholder">
-            <span>PALMEIRAS</span>
+                <span>PALMEIRAS</span>
             </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#historia">História</a></li>
-                    <li><a href="#conquistas">Conquistas</a></li>
+                <ul id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#historia" class="nav-link">História</a></li>
+                    <li><a href="#numeros" class="nav-link">Números</a></li>
+                    <li><a href="#temporada" class="nav-link">Temporada</a></li>
+                    <li><a href="#conquistas" class="nav-link">Conquistas</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,14 +35,104 @@
     <div id="inicio" class="hero">
         <h1>S.E. Palmeiras</h1>
         <p>O Maior Campeão do Brasil - Portfólio de Glórias</p>
-        <a href="#conquistas" class="btn">Ver Troféus</a>
+        <a href="#conquistas" class="btn" id="btnTrofeus">Ver Troféus</a>
     </div>
 
+    <section id="numeros" class="stats">
+        <div class="stats-grid">
+            <div class="stat reveal">
+                <span class="stat-num" data-target="1914" data-suffix="">1914</span>
+                <span class="stat-label">Ano de fundação</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num" data-target="12" data-suffix="">12</span>
+                <span class="stat-label">Títulos Brasileiros</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num" data-target="3" data-suffix="">3</span>
+                <span class="stat-label">Libertadores</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-num" data-target="4" data-suffix="">4</span>
+                <span class="stat-label">Copas do Brasil</span>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
-        
+
+        <section id="temporada">
+            <h2>Temporada 2026</h2>
+            <div class="temporada-box reveal">
+                <p class="temporada-resumo">
+                    O Palmeiras disputa o título do Brasileirão ponto a ponto com o Flamengo, briga pela
+                    Libertadores nas quartas de final e já garantiu o Campeonato Paulista de 2026.
+                    Técnico Abel Ferreira, artilheiro da temporada José Manuel López.
+                </p>
+
+                <div class="tabela-wrap">
+                    <table class="tabela-dados">
+                        <caption>Classificação — Brasileirão Série A</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Pos.</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">P</th>
+                                <th scope="col">J</th>
+                                <th scope="col">V</th>
+                                <th scope="col">E</th>
+                                <th scope="col">D</th>
+                                <th scope="col">SG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1º</td><td>Flamengo</td><td>54</td><td>26</td><td>16</td><td>6</td><td>4</td><td>+30</td>
+                            </tr>
+                            <tr class="linha-destaque">
+                                <td>2º</td><td>Palmeiras</td><td>53</td><td>26</td><td>15</td><td>8</td><td>3</td><td>+24</td>
+                            </tr>
+                            <tr>
+                                <td>3º</td><td>Athletico-PR</td><td>45</td><td>26</td><td>13</td><td>6</td><td>7</td><td>+10</td>
+                            </tr>
+                            <tr>
+                                <td>4º</td><td>Fluminense</td><td>45</td><td>26</td><td>12</td><td>9</td><td>5</td><td>+8</td>
+                            </tr>
+                            <tr>
+                                <td>5º</td><td>Bahia</td><td>43</td><td>26</td><td>11</td><td>10</td><td>5</td><td>+8</td>
+                            </tr>
+                            <tr>
+                                <td>6º</td><td>Cruzeiro</td><td>42</td><td>26</td><td>12</td><td>6</td><td>8</td><td>+1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="tabela-fonte">Atualizado até a 26ª rodada (07/09/2026) · Fonte: CBF</p>
+                </div>
+
+                <div class="tabela-wrap">
+                    <table class="tabela-dados">
+                        <caption>Onde o Palmeiras está em 2026</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Competição</th>
+                                <th scope="col">Situação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Brasileirão Série A</td><td>2º colocado, na briga direta pelo título</td></tr>
+                            <tr><td>Campeonato Paulista</td><td>Campeão de 2026</td></tr>
+                            <tr><td>Copa do Brasil</td><td>Eliminado nas semifinais</td></tr>
+                            <tr><td>Copa Libertadores</td><td>Eliminado nas quartas de final</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="tabela-fonte">Confronto direto contra o Flamengo previsto para a 36ª rodada.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="historia">
             <h2>Nossa História</h2>
-            <div class="historia-box">
+            <div class="historia-box reveal">
                 <p>Fundado em 26 de agosto de 1914 como <strong>Palestra Italia</strong>, o clube foi forçado a mudar de nome em 1942 durante a Segunda Guerra Mundial, nascendo assim a <strong>Sociedade Esportiva Palmeiras</strong>, que "nasceu líder e morreu campeã" em sua primeira partida com a nova identidade.</p>
                 <p>Com uma trajetória marcada por pioneirismo, as Academias de Futebol das décadas de 60 e 70, e uma torcida apaixonada que canta e vibra, o Alviverde consolidou-se como uma das maiores potências do futebol sul-americano e mundial.</p>
             </div>
@@ -42,39 +141,65 @@
         <section id="conquistas">
             <h2>Principais Conquistas</h2>
             <div class="grid-conquistas">
-                
-                <div class="card">
+
+                <div class="card reveal">
                     <div class="icon">🏆</div>
                     <h3>Libertadores</h3>
-                    <p>Tri-Campeão da América, conquistando o continente com raça e tradição.</p>
+                    <p>Tricampeão da América (1999, 2020 e 2021), conquistando o continente com raça e tradição.</p>
                 </div>
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="icon">⭐</div>
                     <h3>Campeonato Brasileiro</h3>
-                    <p>O Maior Campeão do Brasil, colecionando taças de relevância nacional.</p>
+                    <p>O Maior Campeão do Brasil, com 12 taças de relevância nacional.</p>
                 </div>
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="icon">🔰</div>
                     <h3>Copa do Brasil</h3>
-                    <p>Multi-campeão do torneio mais democrático do país nacional.</p>
+                    <p>Quatro vezes campeão do torneio mais democrático do país.</p>
                 </div>
 
-                <div class="card">
+                <div class="card reveal">
                     <div class="icon">🌍</div>
                     <h3>Copa Rio 1951</h3>
                     <p>O primeiro campeão mundial interclubes da história do futebol.</p>
                 </div>
 
             </div>
+
+            <div class="tabela-wrap reveal">
+                <table class="tabela-dados">
+                    <caption>Todos os títulos de maior expressão</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Título</th>
+                            <th scope="col">Quantas vezes</th>
+                            <th scope="col">Anos (seleção)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Campeonato Paulista</td><td>27</td><td>1993, 1994, 1996, 2008, 2020, 2022–2024, 2026</td></tr>
+                        <tr><td>Campeonato Brasileiro</td><td>12</td><td>1993, 1994, 2016, 2018, 2022, 2023</td></tr>
+                        <tr><td>Copa do Brasil</td><td>4</td><td>1998, 2012, 2015, 2020</td></tr>
+                        <tr><td>Copa Libertadores</td><td>3</td><td>1999, 2020, 2021</td></tr>
+                        <tr><td>Torneio Rio–São Paulo</td><td>5</td><td>1933, 1951, 1965, 1993, 2000</td></tr>
+                        <tr><td>Supercopa do Brasil</td><td>1</td><td>2023</td></tr>
+                        <tr><td>Copa Rio (Mundial de Clubes)</td><td>1</td><td>1951</td></tr>
+                    </tbody>
+                </table>
+                <p class="tabela-fonte">Fonte: palmeiras.com.br e CBF.</p>
+            </div>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Portfólio PALMEIRENCE. Desenvolvido para exaltação da <span>Sociedade Esportiva Palmeiras</span>.</p>
+        <p>&copy; <span id="anoAtual">2026</span> Portfólio PALMEIRENSE. Desenvolvido para exaltação da <span>Sociedade Esportiva Palmeiras</span>.</p>
     </footer>
 
+    <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
